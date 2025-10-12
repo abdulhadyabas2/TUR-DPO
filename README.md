@@ -50,9 +50,7 @@ TUR-DPO/
 │  ├─ logs/
 │  ├─ figures/
 │  └─ tables/
-└─ paper/
-   ├─ main.tex (see top-level latex/ folder)
-   └─ figures/
+
 ```
 
 ## Quickstart (Windows PowerShell)
