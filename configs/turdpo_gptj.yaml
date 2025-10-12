@@ -1,0 +1,4 @@
+# Example config for GPT-J-like models (placeholder)
+include: base.yaml
+policy: EleutherAI/gpt-j-6B
+reference: EleutherAI/gpt-j-6B

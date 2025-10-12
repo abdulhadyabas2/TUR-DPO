@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turdpo"
+version = "0.1.0"
+description = "Topology- and Uncertainty-Aware Direct Preference Optimization (TUR-DPO)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Abdulhady Abas" }]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "tqdm>=4.66",
+  "pydantic>=2.6",
+  "pyyaml>=6.0",
+  "pandas>=2.0",
+  "datasets>=2.20",
+  "transformers>=4.44",
+  "accelerate>=0.33",
+  "torch>=2.2; platform_system != 'Windows' or platform_machine != 'ARM64'",
+  "torch>=2.2; platform_system == 'Windows' and platform_machine != 'ARM64'",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["turdpo*"]

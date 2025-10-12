@@ -1,0 +1,4 @@
+# Example config for LLaMA-like models (placeholder)
+include: base.yaml
+policy: meta-llama/Llama-2-7b-hf
+reference: meta-llama/Llama-2-7b-hf

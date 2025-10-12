@@ -1,0 +1,24 @@
+seed: 42
+
+# loss/reward
+beta: 2.0
+gamma: 1.0
+mix_a: 0.6
+gamma_sem: 1.0
+gamma_topo: 1.0
+b_sem: 0.0
+b_topo: 0.0
+lam: 0.5
+
+# uncertainty weighting
+tau_w: 1.2
+w_min: 0.05
+
+# models
+policy: sshleifer/tiny-gpt2
+reference: sshleifer/tiny-gpt2
+ema_decay: 0.995
+
+# logging
+log_wandb: false
+wandb_project: turdpo-demo
