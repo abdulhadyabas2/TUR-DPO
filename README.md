@@ -2,7 +2,7 @@
 
 This repository accompanies the paper:
 
-> Abdulhady A. Abdullah, Tarik A. Rashid, Hadi Veisi, Milena P. Živković, et al.  
+> Abdulhady A. Abdullah, et al.  
 > Topology- and Uncertainty-Aware Direct Preference Optimization (TUR-DPO).  
 > 2025. Preprint / under review.
 
