@@ -1,14 +1,38 @@
-from .losses import tur_dpo_loss
-from .reward import shaped_reward
-from .topology import extract_topology, topology_score, epistemic_uncertainty, aleatoric_uncertainty
-from .semantic import semantic_score
+# TUR-DPO: Topology- and Uncertainty-Aware Direct Preference Optimization
+# Based on the paper: "TUR-DPO: Structure- and Uncertainty-Aware Direct Preference Optimization"
+
+__version__ = "0.2.0"
+__author__ = "Abdulhady Abas, Fatemeh Daneshfar, Seyedali Mirjalili, Mourad Oussalah"
+
+from .topology import (
+    LLMTopologyExtractor,
+    TopologyExtractor,
+    TopologyGraph,
+    TopologyScorer,
+    parse_topology_output,
+)
+from .uncertainty import UncertaintyEstimator, EpistemicUncertainty, AleatoricUncertainty
+from .rewards import ShapedReward, SemanticScorer, LinearCalibrator
+from .loss import TURDPOLoss, ListwiseTURDPOLoss
+from .trainer import TURDPOConfig, TURDPOTrainer
+from .verifier import NodeVerifier, FactChecker
 
 __all__ = [
-    "tur_dpo_loss",
-    "shaped_reward",
-    "extract_topology",
-    "topology_score",
-    "epistemic_uncertainty",
-    "aleatoric_uncertainty",
-    "semantic_score",
+    "TopologyExtractor",
+    "LLMTopologyExtractor",
+    "TopologyGraph",
+    "TopologyScorer",
+    "parse_topology_output",
+    "UncertaintyEstimator",
+    "EpistemicUncertainty",
+    "AleatoricUncertainty",
+    "ShapedReward",
+    "SemanticScorer",
+    "LinearCalibrator",
+    "TURDPOLoss",
+    "ListwiseTURDPOLoss",
+    "TURDPOTrainer",
+    "TURDPOConfig",
+    "NodeVerifier",
+    "FactChecker",
 ]

@@ -1,29 +1,115 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=45", "wheel", "setuptools-scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "turdpo"
-version = "0.1.0"
-description = "Topology- and Uncertainty-Aware Direct Preference Optimization (TUR-DPO)"
+version = "0.2.0"
+description = "TUR-DPO: Topology- and Uncertainty-Aware Direct Preference Optimization"
 readme = "README.md"
-requires-python = ">=3.9"
-license = { text = "Apache-2.0" }
-authors = [{ name = "Abdulhady Abas" }]
-dependencies = [
-  "numpy>=1.24",
-  "scipy>=1.10",
-  "tqdm>=4.66",
-  "pydantic>=2.6",
-  "pyyaml>=6.0",
-  "pandas>=2.0",
-  "datasets>=2.20",
-  "transformers>=4.44",
-  "accelerate>=0.33",
-  "torch>=2.2; platform_system != 'Windows' or platform_machine != 'ARM64'",
-  "torch>=2.2; platform_system == 'Windows' and platform_machine != 'ARM64'",
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Abdulhady Abas"},
+    {name = "Fatemeh Daneshfar"},
+    {name = "Seyedali Mirjalili"},
+    {name = "Mourad Oussalah"}
 ]
+keywords = [
+    "machine learning",
+    "deep learning",
+    "language models",
+    "preference optimization",
+    "direct preference optimization",
+    "uncertainty estimation",
+    "reinforcement learning from human feedback",
+    "RLHF"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+    "numpy>=1.21.0",
+    "scipy>=1.7.0",
+    "tqdm>=4.62.0",
+    "scikit-learn>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=3.0.0",
+    "black>=22.0.0",
+    "isort>=5.10.0",
+    "flake8>=4.0.0",
+    "mypy>=0.950",
+]
+docs = [
+    "sphinx>=4.5.0",
+    "sphinx-rtd-theme>=1.0.0",
+    "myst-parser>=0.17.0",
+]
+all = ["turdpo[dev,docs]"]
+
+[project.urls]
+Homepage = "https://github.com/abdulhadyabas2/TUR-DPO"
+Repository = "https://github.com/abdulhadyabas2/TUR-DPO"
+Issues = "https://github.com/abdulhadyabas2/TUR-DPO/issues"
+
+[project.scripts]
+turdpo-train = "train:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["turdpo*"]
+
+[tool.setuptools]
+py-modules = ["train"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+known_first_party = ["turdpo"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v"
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true

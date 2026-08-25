@@ -1,0 +1,1282 @@
+[
+  {
+    "id": "pair_0",
+    "prompt": "What is 15 + 27?",
+    "chosen": "To solve 15 + 27, I'll break it down step by step:\n\n1. First, I'll add the ones place: 5 + 7 = 12\n2. This gives me 2 in the ones place and I carry the 1 to the tens place\n3. Now I add the tens: 1 + 2 + 1 (carried) = 4\n4. So the answer is 42\n\nTherefore, 15 + 27 = 42",
+    "rejected": "15 + 27 = 43",
+    "task_score_chosen": 1.0,
+    "task_score_rejected": 0.0,
+    "metadata": {
+      "annotation_version": "turdpo-annotations-v1",
+      "topo_score_chosen": 1.0,
+      "topo_score_rejected": 1.0,
+      "semantic_score_chosen": 0.4752615384615385,
+      "semantic_score_rejected": 0.24000000000000005,
+      "uncertainty_chosen": 0.2345039504975693,
+      "uncertainty_rejected": 0.33826298024674994,
+      "pair_weight": 0.9328478111717889,
+      "peer_pressure_rate_chosen": 0.0,
+      "peer_pressure_rate_rejected": 0.0,
+      "topology_features_chosen": {
+        "path_coverage": 1.0,
+        "edge_path_coverage": 1.0,
+        "cycle_count": 0,
+        "dangling_count": 0,
+        "unverified_peer_count": 0,
+        "peer_pressure_count": 0,
+        "peer_pressure_rate": 0.0,
+        "node_count": 5,
+        "edge_count": 4,
+        "num_premises": 1,
+        "num_conclusions": 1,
+        "contradiction_score": 0.0
+      },
+      "topology_features_rejected": {
+        "path_coverage": 1.0,
+        "edge_path_coverage": 0.0,
+        "cycle_count": 0,
+        "dangling_count": 0,
+        "unverified_peer_count": 0,
+        "peer_pressure_count": 0,
+        "peer_pressure_rate": 0.0,
+        "node_count": 1,
+        "edge_count": 0,
+        "num_premises": 1,
+        "num_conclusions": 1,
+        "contradiction_score": 0.0
+      },
+      "k_samples": 3,
+      "tau_w": 1.2,
+      "w_min": 0.05,
+      "topology_graphs_chosen": [
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "To solve 15 + 27, I'll break it down step by step:\n\n1.",
+              "node_type": "premise",
+              "correctness_prob": 0.23076923076923078,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n1",
+              "content": "First, I'll add the ones place: 5 + 7 = 12\n2.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.125,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n2",
+              "content": "This gives me 2 in the ones place and I carry the 1 to the tens place\n3.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.01,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n3",
+              "content": "Now I add the tens: 1 + 2 + 1 (carried) = 4\n4.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.125,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n4",
+              "content": "So the answer is 42\n\nTherefore, 15 + 27 = 42",
+              "node_type": "conclusion",
+              "correctness_prob": 0.44999999999999996,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": [
+            {
+              "source_id": "n0",
+              "target_id": "n1",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n1",
+              "target_id": "n2",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n2",
+              "target_id": "n3",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n3",
+              "target_id": "n4",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "To solve 15 + 27, I'll break it down step by step:\n\n1.",
+              "node_type": "premise",
+              "correctness_prob": 0.23076923076923078,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n1",
+              "content": "First, I'll add the ones place: 5 + 7 = 12\n2.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.125,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n2",
+              "content": "This gives me 2 in the ones place and I carry the 1 to the tens place\n3.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.01,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n3",
+              "content": "Now I add the tens: 1 + 2 + 1 (carried) = 4\n4.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.125,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n4",
+              "content": "So the answer is 42\n\nTherefore, 15 + 27 = 42",
+              "node_type": "conclusion",
+              "correctness_prob": 0.44999999999999996,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": [
+            {
+              "source_id": "n0",
+              "target_id": "n1",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n1",
+              "target_id": "n2",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n2",
+              "target_id": "n3",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n3",
+              "target_id": "n4",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "To solve 15 + 27, I'll break it down step by step:\n\n1.",
+              "node_type": "premise",
+              "correctness_prob": 0.23076923076923078,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n1",
+              "content": "First, I'll add the ones place: 5 + 7 = 12\n2.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.125,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n2",
+              "content": "This gives me 2 in the ones place and I carry the 1 to the tens place\n3.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.01,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n3",
+              "content": "Now I add the tens: 1 + 2 + 1 (carried) = 4\n4.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.125,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n4",
+              "content": "So the answer is 42\n\nTherefore, 15 + 27 = 42",
+              "node_type": "conclusion",
+              "correctness_prob": 0.44999999999999996,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": [
+            {
+              "source_id": "n0",
+              "target_id": "n1",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n1",
+              "target_id": "n2",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n2",
+              "target_id": "n3",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n3",
+              "target_id": "n4",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            }
+          ]
+        }
+      ],
+      "topology_graphs_rejected": [
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "15 + 27 = 43",
+              "node_type": "premise",
+              "correctness_prob": 0.6000000000000001,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "15 + 27 = 43",
+              "node_type": "premise",
+              "correctness_prob": 0.6000000000000001,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "15 + 27 = 43",
+              "node_type": "premise",
+              "correctness_prob": 0.6000000000000001,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "pair_1",
+    "prompt": "If a train travels at 60 mph for 2.5 hours, how far does it go?",
+    "chosen": "To find the distance, I need to use the formula:\n\nDistance = Speed × Time\n\nGiven:\n- Speed = 60 mph\n- Time = 2.5 hours\n\nCalculation:\nDistance = 60 × 2.5 = 150 miles\n\nThe train travels 150 miles.",
+    "rejected": "The train goes really far, probably about 100 miles or so.",
+    "task_score_chosen": 1.0,
+    "task_score_rejected": 0.0,
+    "metadata": {
+      "annotation_version": "turdpo-annotations-v1",
+      "topo_score_chosen": 1.0,
+      "topo_score_rejected": 1.0,
+      "semantic_score_chosen": 0.52,
+      "semantic_score_rejected": 0.05454545454545454,
+      "uncertainty_chosen": 0.31274567986278645,
+      "uncertainty_rejected": 0.22748386048588276,
+      "pair_weight": 0.9447965082992377,
+      "peer_pressure_rate_chosen": 0.0,
+      "peer_pressure_rate_rejected": 0.0,
+      "topology_features_chosen": {
+        "path_coverage": 1.0,
+        "edge_path_coverage": 0.0,
+        "cycle_count": 0,
+        "dangling_count": 0,
+        "unverified_peer_count": 0,
+        "peer_pressure_count": 0,
+        "peer_pressure_rate": 0.0,
+        "node_count": 1,
+        "edge_count": 0,
+        "num_premises": 1,
+        "num_conclusions": 1,
+        "contradiction_score": 0.0
+      },
+      "topology_features_rejected": {
+        "path_coverage": 1.0,
+        "edge_path_coverage": 0.0,
+        "cycle_count": 0,
+        "dangling_count": 0,
+        "unverified_peer_count": 0,
+        "peer_pressure_count": 0,
+        "peer_pressure_rate": 0.0,
+        "node_count": 1,
+        "edge_count": 0,
+        "num_premises": 1,
+        "num_conclusions": 1,
+        "contradiction_score": 0.0
+      },
+      "k_samples": 3,
+      "tau_w": 1.2,
+      "w_min": 0.05,
+      "topology_graphs_chosen": [
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "To find the distance, I need to use the formula:\n\nDistance = Speed × Time\n\nGiven:\n- Speed = 60 mph\n- Time = 2.5 hours\n\nCalculation:\nDistance = 60 × 2.5 = 150 miles\n\nThe train travels 150 miles.",
+              "node_type": "premise",
+              "correctness_prob": 0.30000000000000004,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "To find the distance, I need to use the formula:\n\nDistance = Speed × Time\n\nGiven:\n- Speed = 60 mph\n- Time = 2.5 hours\n\nCalculation:\nDistance = 60 × 2.5 = 150 miles\n\nThe train travels 150 miles.",
+              "node_type": "premise",
+              "correctness_prob": 0.30000000000000004,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "To find the distance, I need to use the formula:\n\nDistance = Speed × Time\n\nGiven:\n- Speed = 60 mph\n- Time = 2.5 hours\n\nCalculation:\nDistance = 60 × 2.5 = 150 miles\n\nThe train travels 150 miles.",
+              "node_type": "premise",
+              "correctness_prob": 0.30000000000000004,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        }
+      ],
+      "topology_graphs_rejected": [
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "The train goes really far, probably about 100 miles or so.",
+              "node_type": "premise",
+              "correctness_prob": 0.13636363636363635,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "The train goes really far, probably about 100 miles or so.",
+              "node_type": "premise",
+              "correctness_prob": 0.13636363636363635,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "The train goes really far, probably about 100 miles or so.",
+              "node_type": "premise",
+              "correctness_prob": 0.13636363636363635,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "pair_2",
+    "prompt": "Explain why the sky is blue.",
+    "chosen": "The sky appears blue due to a phenomenon called Rayleigh scattering.\n\n1. Sunlight contains all colors of the visible spectrum\n2. When sunlight enters Earth's atmosphere, it collides with gas molecules\n3. Shorter wavelengths (blue and violet) scatter more than longer wavelengths (red and orange)\n4. Blue light scatters approximately 5.5 times more than red light\n5. Although violet scatters even more, our eyes are more sensitive to blue, and some violet is absorbed in the upper atmosphere\n\nThis is why we perceive the sky as blue during the day.",
+    "rejected": "The sky is blue because it reflects the ocean.",
+    "task_score_chosen": 1.0,
+    "task_score_rejected": 0.0,
+    "metadata": {
+      "annotation_version": "turdpo-annotations-v1",
+      "topo_score_chosen": 1.0,
+      "topo_score_rejected": 1.0,
+      "semantic_score_chosen": 0.4392165994924616,
+      "semantic_score_rejected": 0.225,
+      "uncertainty_chosen": 0.17797157012993706,
+      "uncertainty_rejected": 0.3433383003841208,
+      "pair_weight": 0.9518861715758387,
+      "peer_pressure_rate_chosen": 0.0,
+      "peer_pressure_rate_rejected": 0.0,
+      "topology_features_chosen": {
+        "path_coverage": 1.0,
+        "edge_path_coverage": 1.0,
+        "cycle_count": 0,
+        "dangling_count": 0,
+        "unverified_peer_count": 0,
+        "peer_pressure_count": 0,
+        "peer_pressure_rate": 0.0,
+        "node_count": 7,
+        "edge_count": 6,
+        "num_premises": 1,
+        "num_conclusions": 1,
+        "contradiction_score": 0.0
+      },
+      "topology_features_rejected": {
+        "path_coverage": 1.0,
+        "edge_path_coverage": 0.0,
+        "cycle_count": 0,
+        "dangling_count": 0,
+        "unverified_peer_count": 0,
+        "peer_pressure_count": 0,
+        "peer_pressure_rate": 0.0,
+        "node_count": 1,
+        "edge_count": 0,
+        "num_premises": 1,
+        "num_conclusions": 1,
+        "contradiction_score": 0.0
+      },
+      "k_samples": 3,
+      "tau_w": 1.2,
+      "w_min": 0.05,
+      "topology_graphs_chosen": [
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "The sky appears blue due to a phenomenon called Rayleigh scattering.",
+              "node_type": "premise",
+              "correctness_prob": 0.2727272727272727,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n1",
+              "content": "1.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.01,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n2",
+              "content": "Sunlight contains all colors of the visible spectrum\n2.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.16666666666666663,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n3",
+              "content": "When sunlight enters Earth's atmosphere, it collides with gas molecules\n3.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.01,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n4",
+              "content": "Shorter wavelengths (blue and violet) scatter more than longer wavelengths (red and orange)\n4.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.01,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n5",
+              "content": "Blue light scatters approximately 5.5 times more than red light\n5.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.01,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n6",
+              "content": "Although violet scatters even more, our eyes are more sensitive to blue, and some violet is absorbed in the upper atmosphere\n\nThis is why we perceive the sky as blue during the day.",
+              "node_type": "conclusion",
+              "correctness_prob": 0.2068965517241379,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": [
+            {
+              "source_id": "n0",
+              "target_id": "n1",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n1",
+              "target_id": "n2",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n2",
+              "target_id": "n3",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n3",
+              "target_id": "n4",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n4",
+              "target_id": "n5",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n5",
+              "target_id": "n6",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "The sky appears blue due to a phenomenon called Rayleigh scattering.",
+              "node_type": "premise",
+              "correctness_prob": 0.2727272727272727,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n1",
+              "content": "1.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.01,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n2",
+              "content": "Sunlight contains all colors of the visible spectrum\n2.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.16666666666666663,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n3",
+              "content": "When sunlight enters Earth's atmosphere, it collides with gas molecules\n3.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.01,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n4",
+              "content": "Shorter wavelengths (blue and violet) scatter more than longer wavelengths (red and orange)\n4.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.01,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n5",
+              "content": "Blue light scatters approximately 5.5 times more than red light\n5.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.01,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n6",
+              "content": "Although violet scatters even more, our eyes are more sensitive to blue, and some violet is absorbed in the upper atmosphere\n\nThis is why we perceive the sky as blue during the day.",
+              "node_type": "conclusion",
+              "correctness_prob": 0.2068965517241379,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": [
+            {
+              "source_id": "n0",
+              "target_id": "n1",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n1",
+              "target_id": "n2",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n2",
+              "target_id": "n3",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n3",
+              "target_id": "n4",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n4",
+              "target_id": "n5",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n5",
+              "target_id": "n6",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "The sky appears blue due to a phenomenon called Rayleigh scattering.",
+              "node_type": "premise",
+              "correctness_prob": 0.2727272727272727,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n1",
+              "content": "1.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.01,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n2",
+              "content": "Sunlight contains all colors of the visible spectrum\n2.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.16666666666666663,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n3",
+              "content": "When sunlight enters Earth's atmosphere, it collides with gas molecules\n3.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.01,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n4",
+              "content": "Shorter wavelengths (blue and violet) scatter more than longer wavelengths (red and orange)\n4.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.01,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n5",
+              "content": "Blue light scatters approximately 5.5 times more than red light\n5.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.01,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n6",
+              "content": "Although violet scatters even more, our eyes are more sensitive to blue, and some violet is absorbed in the upper atmosphere\n\nThis is why we perceive the sky as blue during the day.",
+              "node_type": "conclusion",
+              "correctness_prob": 0.2068965517241379,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": [
+            {
+              "source_id": "n0",
+              "target_id": "n1",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n1",
+              "target_id": "n2",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n2",
+              "target_id": "n3",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n3",
+              "target_id": "n4",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n4",
+              "target_id": "n5",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n5",
+              "target_id": "n6",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            }
+          ]
+        }
+      ],
+      "topology_graphs_rejected": [
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "The sky is blue because it reflects the ocean.",
+              "node_type": "premise",
+              "correctness_prob": 0.5625,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "The sky is blue because it reflects the ocean.",
+              "node_type": "premise",
+              "correctness_prob": 0.5625,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "The sky is blue because it reflects the ocean.",
+              "node_type": "premise",
+              "correctness_prob": 0.5625,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "pair_3",
+    "prompt": "What is the capital of France?",
+    "chosen": "The capital of France is Paris. Paris is located in northern France along the Seine River and has been the capital since the 10th century. It is also the largest city in France with a population of over 2 million in the city proper and over 12 million in the metropolitan area.",
+    "rejected": "The capital of France is Lyon.",
+    "task_score_chosen": 1.0,
+    "task_score_rejected": 0.0,
+    "metadata": {
+      "annotation_version": "turdpo-annotations-v1",
+      "topo_score_chosen": 1.0,
+      "topo_score_rejected": 1.0,
+      "semantic_score_chosen": 0.5852941176470589,
+      "semantic_score_rejected": 0.36,
+      "uncertainty_chosen": 0.2598769143508712,
+      "uncertainty_rejected": 0.19915355690264216,
+      "pair_weight": 0.9759944124549941,
+      "peer_pressure_rate_chosen": 0.0,
+      "peer_pressure_rate_rejected": 0.0,
+      "topology_features_chosen": {
+        "path_coverage": 1.0,
+        "edge_path_coverage": 1.0,
+        "cycle_count": 0,
+        "dangling_count": 0,
+        "unverified_peer_count": 0,
+        "peer_pressure_count": 0,
+        "peer_pressure_rate": 0.0,
+        "node_count": 3,
+        "edge_count": 2,
+        "num_premises": 1,
+        "num_conclusions": 1,
+        "contradiction_score": 0.0
+      },
+      "topology_features_rejected": {
+        "path_coverage": 1.0,
+        "edge_path_coverage": 0.0,
+        "cycle_count": 0,
+        "dangling_count": 0,
+        "unverified_peer_count": 0,
+        "peer_pressure_count": 0,
+        "peer_pressure_rate": 0.0,
+        "node_count": 1,
+        "edge_count": 0,
+        "num_premises": 1,
+        "num_conclusions": 1,
+        "contradiction_score": 0.0
+      },
+      "k_samples": 3,
+      "tau_w": 1.2,
+      "w_min": 0.05,
+      "topology_graphs_chosen": [
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "The capital of France is Paris.",
+              "node_type": "premise",
+              "correctness_prob": 0.8999999999999999,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n1",
+              "content": "Paris is located in northern France along the Seine River and has been the capital since the 10th century.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.2647058823529412,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n2",
+              "content": "It is also the largest city in France with a population of over 2 million in the city proper and over 12 million in the metropolitan area.",
+              "node_type": "conclusion",
+              "correctness_prob": 0.22499999999999998,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": [
+            {
+              "source_id": "n0",
+              "target_id": "n1",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n1",
+              "target_id": "n2",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "The capital of France is Paris.",
+              "node_type": "premise",
+              "correctness_prob": 0.8999999999999999,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n1",
+              "content": "Paris is located in northern France along the Seine River and has been the capital since the 10th century.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.2647058823529412,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n2",
+              "content": "It is also the largest city in France with a population of over 2 million in the city proper and over 12 million in the metropolitan area.",
+              "node_type": "conclusion",
+              "correctness_prob": 0.22499999999999998,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": [
+            {
+              "source_id": "n0",
+              "target_id": "n1",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n1",
+              "target_id": "n2",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "The capital of France is Paris.",
+              "node_type": "premise",
+              "correctness_prob": 0.8999999999999999,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n1",
+              "content": "Paris is located in northern France along the Seine River and has been the capital since the 10th century.",
+              "node_type": "intermediate",
+              "correctness_prob": 0.2647058823529412,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            },
+            {
+              "id": "n2",
+              "content": "It is also the largest city in France with a population of over 2 million in the city proper and over 12 million in the metropolitan area.",
+              "node_type": "conclusion",
+              "correctness_prob": 0.22499999999999998,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": [
+            {
+              "source_id": "n0",
+              "target_id": "n1",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            },
+            {
+              "source_id": "n1",
+              "target_id": "n2",
+              "edge_type": "supports",
+              "weight": 1.0,
+              "metadata": {}
+            }
+          ]
+        }
+      ],
+      "topology_graphs_rejected": [
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "The capital of France is Lyon.",
+              "node_type": "premise",
+              "correctness_prob": 0.8999999999999999,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "The capital of France is Lyon.",
+              "node_type": "premise",
+              "correctness_prob": 0.8999999999999999,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "The capital of France is Lyon.",
+              "node_type": "premise",
+              "correctness_prob": 0.8999999999999999,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        }
+      ]
+    }
+  },
+  {
+    "id": "pair_4",
+    "prompt": "Solve for x: 2x + 5 = 13",
+    "chosen": "I'll solve this step by step:\n\n2x + 5 = 13\n\nStep 1: Subtract 5 from both sides\n2x + 5 - 5 = 13 - 5\n2x = 8\n\nStep 2: Divide both sides by 2\n2x/2 = 8/2\nx = 4\n\nLet me verify: 2(4) + 5 = 8 + 5 = 13 ✓\n\nTherefore, x = 4",
+    "rejected": "x = 4 because 2 times 4 is 8 plus 5 is 13",
+    "task_score_chosen": 1.0,
+    "task_score_rejected": 0.8,
+    "metadata": {
+      "annotation_version": "turdpo-annotations-v1",
+      "topo_score_chosen": 1.0,
+      "topo_score_rejected": 1.0,
+      "semantic_score_chosen": 0.5161290322580645,
+      "semantic_score_rejected": 0.4836363636363637,
+      "uncertainty_chosen": 0.30930351774491077,
+      "uncertainty_rejected": 0.3397120103008867,
+      "pair_weight": 0.9059969541856561,
+      "peer_pressure_rate_chosen": 0.0,
+      "peer_pressure_rate_rejected": 0.0,
+      "topology_features_chosen": {
+        "path_coverage": 1.0,
+        "edge_path_coverage": 0.0,
+        "cycle_count": 0,
+        "dangling_count": 0,
+        "unverified_peer_count": 0,
+        "peer_pressure_count": 0,
+        "peer_pressure_rate": 0.0,
+        "node_count": 1,
+        "edge_count": 0,
+        "num_premises": 1,
+        "num_conclusions": 1,
+        "contradiction_score": 0.0
+      },
+      "topology_features_rejected": {
+        "path_coverage": 1.0,
+        "edge_path_coverage": 0.0,
+        "cycle_count": 0,
+        "dangling_count": 0,
+        "unverified_peer_count": 0,
+        "peer_pressure_count": 0,
+        "peer_pressure_rate": 0.0,
+        "node_count": 1,
+        "edge_count": 0,
+        "num_premises": 1,
+        "num_conclusions": 1,
+        "contradiction_score": 0.0
+      },
+      "k_samples": 3,
+      "tau_w": 1.2,
+      "w_min": 0.05,
+      "topology_graphs_chosen": [
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "I'll solve this step by step:\n\n2x + 5 = 13\n\nStep 1: Subtract 5 from both sides\n2x + 5 - 5 = 13 - 5\n2x = 8\n\nStep 2: Divide both sides by 2\n2x/2 = 8/2\nx = 4\n\nLet me verify: 2(4) + 5 = 8 + 5 = 13 ✓\n\nTherefore, x = 4",
+              "node_type": "premise",
+              "correctness_prob": 0.29032258064516125,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "I'll solve this step by step:\n\n2x + 5 = 13\n\nStep 1: Subtract 5 from both sides\n2x + 5 - 5 = 13 - 5\n2x = 8\n\nStep 2: Divide both sides by 2\n2x/2 = 8/2\nx = 4\n\nLet me verify: 2(4) + 5 = 8 + 5 = 13 ✓\n\nTherefore, x = 4",
+              "node_type": "premise",
+              "correctness_prob": 0.29032258064516125,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "I'll solve this step by step:\n\n2x + 5 = 13\n\nStep 1: Subtract 5 from both sides\n2x + 5 - 5 = 13 - 5\n2x = 8\n\nStep 2: Divide both sides by 2\n2x/2 = 8/2\nx = 4\n\nLet me verify: 2(4) + 5 = 8 + 5 = 13 ✓\n\nTherefore, x = 4",
+              "node_type": "premise",
+              "correctness_prob": 0.29032258064516125,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        }
+      ],
+      "topology_graphs_rejected": [
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "x = 4 because 2 times 4 is 8 plus 5 is 13",
+              "node_type": "premise",
+              "correctness_prob": 0.40909090909090906,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "x = 4 because 2 times 4 is 8 plus 5 is 13",
+              "node_type": "premise",
+              "correctness_prob": 0.40909090909090906,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            {
+              "id": "n0",
+              "content": "x = 4 because 2 times 4 is 8 plus 5 is 13",
+              "node_type": "premise",
+              "correctness_prob": 0.40909090909090906,
+              "is_peer_assertion": false,
+              "peer_verified": false,
+              "metadata": {}
+            }
+          ],
+          "edges": []
+        }
+      ]
+    }
+  }
+]
